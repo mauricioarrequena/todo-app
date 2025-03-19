@@ -1,0 +1,16 @@
+.outergrid-container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 16rem 1fr;
+  grid-template-areas: "alias-sidenav alias-innergrid";
+}
+
+.sidenav {
+  grid-area: alias-sidenav;
+  background-color: blue;
+}
+
+.innergrid {
+  grid-area: alias-innergrid;
+}

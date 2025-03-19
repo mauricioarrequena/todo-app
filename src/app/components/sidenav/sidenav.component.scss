@@ -1,0 +1,22 @@
+:host {
+  min-height: 100%;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden !important;
+}
+
+.sidenav-header {
+  background-color: red;
+  min-height: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.sidenav-body {
+  flex: 1;
+  background-color: darkcyan;
+}
+.sidenav-footer {
+  min-height: 2rem;
+  background-color: green;
+}

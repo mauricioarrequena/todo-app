@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  background-color: darkgoldenrod;
+  padding: 1rem;
+}
+
+.project-list-container {
+  display: flex;
+  flex-direction: column;
+  background-color: darkcyan;
+  padding: 1rem;
+}
+
+.project-list {
+  background-color: lightgreen;
+}
