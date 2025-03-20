@@ -1,22 +1,128 @@
 :host {
   min-height: 100%;
-  width: 10rem;
   display: flex;
   flex-direction: column;
-  overflow-y: hidden !important;
+  background-color: #fafafa;
 }
 
 .sidenav-header {
-  background-color: red;
-  min-height: 2rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0.8rem 0.6rem 0.8rem;
 }
+
+.header-user-container {
+  align-items: center;
+  display: flex;
+  column-gap: 0.6rem;
+
+  .user-icon {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: brown;
+    color: white;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  mat-icon {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
+.header-controls-container {
+  display: flex;
+  column-gap: 1rem;
+
+  mat-icon {
+    height: min-content;
+  }
+}
+
 .sidenav-body {
   flex: 1;
-  background-color: darkcyan;
 }
+
+.sidenav-actions {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem;
+  padding-top: 0.1rem;
+} 
+
+.action-item {
+  margin-bottom: 0.2rem;
+  display: flex;
+  column-gap: 0.4rem;
+  padding: 0.1rem;
+  font-size: 0.75rem;
+}
+
+.action-item:last-child {
+  margin-bottom: 0;
+}
+
+.action-item:hover {
+  background-color: #c1c1c1;
+  cursor: pointer;
+}
+
+.sidenav-projects {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem;
+  font-size: 0.8rem;
+}
+
+.projects-title {
+  padding: 0.2rem;
+}
+
+.projects-title:hover {
+  background-color: #c1c1c1;
+  cursor: pointer;
+}
+
+.project-item {
+  padding-left: 0.5rem;
+  padding: 0.2rem;
+}
+
+.project-item:hover {
+  background-color: #c1c1c1;
+  cursor: pointer;
+}
+
 .sidenav-footer {
-  min-height: 2rem;
-  background-color: green;
+  min-height: 4rem;
+  padding: 0.4rem;
+}
+
+.footer-item {
+  margin-bottom: 0.2rem;
+  display: flex;
+  column-gap: 0.4rem;
+  padding: 0.1rem;
+  font-size: 0.75rem;
+}
+
+.footer-item:last-child {
+  margin-bottom: 0;
+}
+
+.footer-item:hover {
+  background-color: #c1c1c1;
+  cursor: pointer;
 }

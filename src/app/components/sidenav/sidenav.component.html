@@ -1,5 +1,63 @@
-<div class="sidenav-header">header
-  <button (click)="openDialog()">add task</button>
+<div class="sidenav-header">
+  <div class="header-user-container">
+    <p class="user-icon">M</p>
+    <p>Mauricio</p>
+    <mat-icon aria-hidden="false" fontIcon="keyboard_arrow_down"></mat-icon>
+  </div>
+  <div class="header-controls-container">
+    <mat-icon aria-hidden="false" fontSet="material-icons-outlined">
+      notifications
+    </mat-icon>
+    <mat-icon fontSet="material-icons-outlined"> dock_to_right </mat-icon>
+  </div>
 </div>
-<div class="sidenav-body">body</div>
-<div class="sidenav-footer">footer</div>
+<div class="sidenav-body">
+  <div class="sidenav-actions">
+    <div class="action-item">
+      <mat-icon fontSet="material-icons-outlined" (click)="openDialog()">add</mat-icon> 
+      Add task
+    </div>
+    <div class="action-item">
+      <mat-icon fontSet="material-icons-outlined" (click)="openDialog()">search</mat-icon> 
+      Search
+    </div>
+    <div class="action-item">
+      <mat-icon fontSet="material-icons-outlined" (click)="openDialog()">move_to_inbox</mat-icon> 
+      Inbox
+    </div>
+    <div class="action-item">
+      <mat-icon fontSet="material-icons-outlined" (click)="openDialog()">today</mat-icon> 
+      Today
+    </div>
+    <div class="action-item">
+      <mat-icon fontSet="material-icons-outlined" (click)="openDialog()">padding </mat-icon> 
+      Upcoming
+    </div>
+    <div class="action-item">
+      <mat-icon fontSet="material-icons-outlined" (click)="openDialog()">grid_view</mat-icon> 
+      Filter & Labels
+    </div>
+    <div class="action-item">
+      <mat-icon fontSet="material-icons-outlined" (click)="openDialog()">check_circle</mat-icon> 
+      Completed
+    </div>
+  </div>
+  <div class="sidenav-projects">
+    <div class="projects-title">
+      My Projects
+    </div>
+    <div class="project-item">
+      # Home
+    </div>
+  </div>
+</div>
+<div class="sidenav-footer">
+  <div class="footer-item">
+    <mat-icon fontSet="material-icons-outlined" (click)="openDialog()">add</mat-icon> 
+    Add a team
+  </div>
+  <div class="footer-item">
+    <mat-icon fontSet="material-icons-outlined" (click)="openDialog()">workspaces</mat-icon> 
+    Browse templates
+  </div>
+</div>
