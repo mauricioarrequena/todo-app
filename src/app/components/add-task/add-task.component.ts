@@ -10,6 +10,9 @@ import {
   ReactiveFormsModule,
 } from '@angular/forms';
 import { TaskService } from '../../services/task/task.service';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-add-task',
@@ -21,7 +24,10 @@ import { TaskService } from '../../services/task/task.service';
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
+    MatDividerModule,
+    MatIconModule,
   ],
+
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './add-task.component.html',
   styleUrl: './add-task.component.scss',
@@ -34,19 +40,19 @@ export class AddTaskComponent {
     description: new FormControl(''),
   });
 
-  get title()
-  {
+  get title() {
     return this.taskForm.get('title')!;
   }
 
-  get description()
-  {
+  get description() {
     return this.taskForm.get('description')!;
   }
 
   submit() {
-    this.taskService.post(this.title.value!, this.description.value!).subscribe((data) => {
-      console.log(data);
-    });
+    this.taskService
+      .post(this.title.value!, this.description.value!)
+      .subscribe((data) => {
+        console.log(data);
+      });
   }
 }

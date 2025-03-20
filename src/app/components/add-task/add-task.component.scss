@@ -1,4 +1,123 @@
-mat-dialog-content {
+.form {
   display: flex;
   flex-direction: column;
+  padding: 0.8rem;
+
+  border-style: solid;
+  border-width: 0.01rem;
+  border-color: #E6E6E6;
+}
+
+.form-title {
+  border-width: 0;
+  font-size: 1.5rem;
+  background-color: transparent;
+}
+
+.form-title:focus {
+  outline: none;
+}
+
+.form-description {
+  margin-bottom: 1rem;
+  border-width: 0;
+  font-size: 0.8rem;
+  background-color: transparent;
+}
+
+.form-description:focus {
+  outline: none;
+}
+
+.controls-container {
+  margin-bottom: 1rem;
+  display: flex;
+  column-gap: 0.6rem;
+
+  button {
+    height: min-content;
+    width: min-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #E6E6E6;
+    color: #606060;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: #F5F5F5;
+  }
+
+  mat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+
+}
+
+mat-divider {
+  margin-bottom: 1rem;
+  color: #E6E6E6;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-action-buttons {
+  display: flex;
+  column-gap: 0.4rem;
+}
+
+.footer-inbox-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem 0 1rem;
+  background-color: transparent;
+  border-style: none;
+  color: #606060;
+
+  mat-icon {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+  }
+}
+
+.footer-inbox-button:hover {
+  cursor: pointer;
+  background-color: #F5F5F5;
+}
+
+.cancel-button {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-weight: 700;
+  color: #606060;
+  border-style: none;
+  background-color: #F5F5F5;
+}
+
+.cancel-button:hover {
+  background-color: #E6E6E6;
+}
+
+.add-button {
+  border-style: none;
+  color: #FFFFFF;
+  font-weight: 700;
+  background-color: #E34935;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.add-button:hover {
+  cursor: pointer;
+  background-color: #b9301e;
 }

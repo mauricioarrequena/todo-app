@@ -9,7 +9,12 @@ import { AddTaskComponent } from '../add-task/add-task.component';
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [SidenavComponent, MatButtonModule, MatDialogModule, RouterOutlet],
+  imports: [
+    SidenavComponent,
+    MatButtonModule,
+    MatDialogModule,
+    RouterOutlet,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss',
@@ -25,6 +30,10 @@ export class LayoutComponent {
   }
 
   openDialog() {
-    const dialogRef = this.dialog.open(AddTaskComponent);
+    const dialogRef = this.dialog.open(AddTaskComponent, {
+      width: '600px',
+    });
   }
 }
+
+

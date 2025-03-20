@@ -1,19 +1,27 @@
-<form [formGroup]="taskForm" (submit)="submit()">
-  <h2 mat-dialog-title>Add new task</h2>
-  <mat-dialog-content class="mat-typography"> 
-    <mat-form-field class="example-full-width">
-      <mat-label>Title</mat-label>
-      <input matInput placeholder="" value="" formControlName="title">
-    </mat-form-field>
-    <mat-form-field class="example-full-width">
-      <mat-label>Description</mat-label>
-      <input matInput placeholder="" value="" formControlName="description">
-    </mat-form-field>
-  </mat-dialog-content>
-  <mat-dialog-actions align="end">
-    <button mat-button mat-dialog-close>Cancel</button>
-    <button mat-button [mat-dialog-close]="true" cdkFocusInitial type="submit">
-      Add
-    </button>
-  </mat-dialog-actions>
+<form class="form" [formGroup]="taskForm" (submit)="submit()">
+  <input
+    class="form-title"
+    type="text"
+    placeholder="Reasearch articles Saturday evemning"
+  />
+  <input class="form-description" type="text" placeholder="Description" />
+  <div class="controls-container">
+    <button><mat-icon fontSet="material-icons-outlined">date_range</mat-icon> Date</button>
+    <button><mat-icon fontSet="material-icons-outlined">flag</mat-icon> Priority</button>
+    <button><mat-icon fontSet="material-icons-outlined">alarm</mat-icon> Reminders</button>
+    <button><mat-icon fontSet="material-icons-outlined">more_horiz</mat-icon></button>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="footer-container">
+    <button class="footer-inbox-button"><mat-icon fontSet="material-icons-outlined">move_to_inbox</mat-icon>Inbox</button>
+    <div class="form-action-buttons">
+      <button class="cancel-button">Cancel</button>
+      <button class="add-button">Add task</button>
+    </div>
+  </div>
 </form>
+
+ 
+ 
+ 
+
